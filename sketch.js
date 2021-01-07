@@ -5,13 +5,16 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var tree, ground;
-var boyImage, boy;
+var boyImage, boy, treeImage, stoneImage, mangoImage ;
 var mango1, mango2, mango3, mango4, mango5;
 
 function preload()
 {
 
 boyImage = loadImage("boy.png");
+treeImage = loadImage("tree.png");
+stoneImage = loadImage("stone.png");
+mangoImage = loadImage("mango.png");
 	
 }
 
