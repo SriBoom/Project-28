@@ -2,11 +2,11 @@ class Tree {
     constructor(x,y){
         this.x = x;
         this.y = y;
-        this.treeWidth=200;
-        this.treeHeight=400;
+        this.treeWidth=500;
+        this.treeHeight=500;
 
-    this.image=loadImage('tree.png')
         this.treeBody=Bodies.rectangle(this.x, this.y, this.treeWidth, this.treeHeight,{isStatic:true})
+        this.image=loadImage('/Plucking mangoes/tree.png')
 
         World.add(world, this.treeBody)
          
@@ -19,7 +19,7 @@ class Tree {
     push()
     translate(pos.x, pos.y)
     imageMode(CENTER)
-    image(this.image, this.x, this.y)
+    image(this.image, this.x, this.y, this.treeWidth, this.treeHeight)
     pop()
     
 
