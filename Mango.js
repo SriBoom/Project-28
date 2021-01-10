@@ -9,7 +9,7 @@ class Mango{
         this.y = y;
         this.r = r;
 
-        this.body = Bodies.ellipse(this.x, this.y, this.r, this.r, options);
+        this.body = Bodies.ellipse(this.x, this.y, this.r, this,r, options);
         this.image = loadImage("/Plucking mangoes/mango.png");
         World.add(world, this.body);
       }

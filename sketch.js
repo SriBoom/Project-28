@@ -28,7 +28,7 @@ function setup() {
 	ground = new Ground(600,height,1200,20);
 	stone = new  Stone(200, 470);
 
-	mango1 = new Mango(500, 200, 20, 20)
+	mango1 = new Mango(500, 200, 20)
 
 	Engine.run(engine);
   
