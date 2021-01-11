@@ -9,7 +9,7 @@ class Mango{
         this.y = y;
         this.r = r;
 
-        this.body = Bodies.ellipse(this.x, this.y, this.r, this,r, options);
+        this.body = Bodies.circle(this.x, this.y, this.r, options);
         this.image = loadImage("/Plucking mangoes/mango.png");
         World.add(world, this.body);
       }
@@ -19,7 +19,7 @@ class Mango{
         translate(this.body.position.x, this.body.position.y);
         rotate(r);
         imageMode(CENTER);
-        image(this.image, 0, 0, this.width, this.height);
+        image(this.image, 0, 0, this.r*2, this.r*2);
         pop();
       }
 }
