@@ -12,7 +12,7 @@ var mango1, mango2, mango3, mango4, mango5;
 function preload()
 {
 
-boyImage = loadImage("/Plucking mangoes/boy.png");
+boyImage = loadImage("images/boy.png");
 
 	
 }
@@ -27,7 +27,7 @@ function setup() {
 	//Create the Bodies Here.
 	tree = new Tree(450, 280);
 	ground = new Ground(600,height,1200,20);
-	stone = new  Stone(200, 470);
+	stone = new  Stone(200, 470,30);
 	launcher = new Launcher(stone.body, {x:235, y:420});
 	
 
@@ -48,6 +48,7 @@ function draw() {
   stone.display();
   launcher.display();
   mango1.display();
+  
 }
 
 function mouseDragged(){
