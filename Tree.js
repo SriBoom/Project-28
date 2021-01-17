@@ -2,8 +2,8 @@ class Tree {
     constructor(x,y){
         this.x = x;
         this.y = y;
-        this.treeWidth=500;
-        this.treeHeight=500;
+        this.treeWidth=400;
+        this.treeHeight=400;
 
         this.treeBody=Bodies.rectangle(this.x, this.y, this.treeWidth, this.treeHeight,{isStatic:true})
         this.image=loadImage('/Plucking mangoes/tree.png')

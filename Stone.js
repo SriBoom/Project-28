@@ -1,9 +1,7 @@
 class Stone{
   constructor(x, y, r) {
       var options = {
-          isStatic:true,
-          'restitution':0,
-          'friction':1.0,
+          isStatic:false,
       }
       this.x = x;
       this.y = y;
